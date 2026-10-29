@@ -10,3 +10,11 @@ class CalculatorTests(unittest.TestCase):
     def test_multiply(self): self.assertEqual(multiply(3, 4), 12)
 
 if __name__ == '__main__': unittest.main()
+
+class ModuloTests(unittest.TestCase):
+    def test_remainder(self):
+        from main import modulo
+        self.assertEqual(modulo(11, 4), 3)
+    def test_zero_divisor(self):
+        from main import modulo
+        with self.assertRaises(ZeroDivisionError): modulo(1, 0)
