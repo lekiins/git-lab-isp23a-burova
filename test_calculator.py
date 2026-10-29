@@ -1,4 +1,4 @@
-﻿import unittest
+import unittest
 from main import add, subtract, divide, multiply
 
 class CalculatorTests(unittest.TestCase):
@@ -9,7 +9,7 @@ class CalculatorTests(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError): divide(1, 0)
     def test_multiply(self): self.assertEqual(multiply(3, 4), 12)
 
-if __name__ == '__main__': unittest.main()
+
 
 class ModuloTests(unittest.TestCase):
     def test_remainder(self):
@@ -18,3 +18,5 @@ class ModuloTests(unittest.TestCase):
     def test_zero_divisor(self):
         from main import modulo
         with self.assertRaises(ZeroDivisionError): modulo(1, 0)
+
+if __name__ == '__main__': unittest.main()
