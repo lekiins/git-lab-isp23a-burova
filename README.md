@@ -1,1 +1,1 @@
-﻿# Calculator for Git practice
+﻿# Calculator project from feature-2
